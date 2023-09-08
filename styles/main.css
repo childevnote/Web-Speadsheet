@@ -41,11 +41,13 @@ button:active {
 /* 열을 강조하는 스타일 */
 .highlighted-column {
   background-color: lightblue; /* 원하는 색상을 선택하세요 */
+  color: white;
 }
 
 /* 행을 강조하는 스타일 */
 .highlighted-row {
   background-color: lightgreen; /* 원하는 색상을 선택하세요 */
+  color: white;
 }
 
 .cell-input {
