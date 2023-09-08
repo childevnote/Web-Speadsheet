@@ -1,0 +1,57 @@
+table {
+  border-collapse: collapse;
+  border: 0;
+}
+
+th,
+td {
+  border: 2px solid #aaaaaab0;
+  padding: 0.5rem;
+  min-width: 6rem;
+  font-size: 18px;
+  text-align: center;
+}
+
+button {
+  background-color: rgb(0, 160, 0);
+  color: white;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+button:active {
+  opacity: 0.3;
+}
+
+#cellInfo {
+  font-weight: bold;
+}
+
+#tbody-title,
+#thead-title {
+  background-color: rgba(164, 164, 164, 0.4);
+}
+
+/* 열을 강조하는 스타일 */
+.highlighted-column {
+  background-color: lightblue; /* 원하는 색상을 선택하세요 */
+}
+
+/* 행을 강조하는 스타일 */
+.highlighted-row {
+  background-color: lightgreen; /* 원하는 색상을 선택하세요 */
+}
+
+.cell-input {
+  outline: none;
+  border: 0;
+  width: 6rem;
+  font-size: 17px;
+  text-align: center;
+}

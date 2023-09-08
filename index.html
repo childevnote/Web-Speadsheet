@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.4/xlsx.full.min.js"></script>
+  <script src="app.js"></script>
+  <script src="exel.js"></script>
+  <title>Spreadsheet</title>
+</head>
+
+<body>
+  <button id="export-button">Export Speadsheet</button>
+  <p id="cellInfo">Cell : </p>
+  <table id="spreadsheetTable">
+    <thead>
+      <tr id="thead-title">
+        <td></td>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        <td>D</td>
+        <td>E</td>
+        <td>F</td>
+        <td>G</td>
+        <td>H</td>
+        <td>I</td>
+      </tr>
+    </thead>
+
+    <tbody align="center">
+      <tr id="1">
+        <td id="tbody-title 1">1</td>
+        <td class="cell" data-col="A" data-row="1"></td>
+        <td class="cell" data-col="B" data-row="1"></td>
+        <td class="cell" data-col="C" data-row="1"></td>
+        <td class="cell" data-col="D" data-row="1"></td>
+        <td class="cell" data-col="E" data-row="1"></td>
+        <td class="cell" data-col="F" data-row="1"></td>
+        <td class="cell" data-col="G" data-row="1"></td>
+        <td class="cell" data-col="H" data-row="1"></td>
+        <td class="cell" data-col="I" data-row="1"></td>
+      </tr>
+      <tr>
+        <td id="tbody-title 2">2</td>
+        <td class="cell" data-col="A" data-row="2"></td>
+        <td class="cell" data-col="B" data-row="2"></td>
+        <td class="cell" data-col="C" data-row="2"></td>
+        <td class="cell" data-col="D" data-row="2"></td>
+        <td class="cell" data-col="E" data-row="2"></td>
+        <td class="cell" data-col="F" data-row="2"></td>
+        <td class="cell" data-col="G" data-row="2"></td>
+        <td class="cell" data-col="H" data-row="2"></td>
+        <td class="cell" data-col="I" data-row="2"></td>
+      </tr>
+      <tr>
+        <td id="tbody-title 3">3</td>
+        <td class="cell" data-col="A" data-row="3"></td>
+        <td class="cell" data-col="B" data-row="3"></td>
+        <td class="cell" data-col="C" data-row="3"></td>
+        <td class="cell" data-col="D" data-row="3"></td>
+        <td class="cell" data-col="E" data-row="3"></td>
+        <td class="cell" data-col="F" data-row="3"></td>
+        <td class="cell" data-col="G" data-row="3"></td>
+        <td class="cell" data-col="H" data-row="3"></td>
+        <td class="cell" data-col="I" data-row="3"></td>
+      </tr>
+      <tr>
+        <td id="tbody-title 4">4</td>
+        <td class="cell" data-col="A" data-row="4"></td>
+        <td class="cell" data-col="B" data-row="4"></td>
+        <td class="cell" data-col="C" data-row="4"></td>
+        <td class="cell" data-col="D" data-row="4"></td>
+        <td class="cell" data-col="E" data-row="4"></td>
+        <td class="cell" data-col="F" data-row="4"></td>
+        <td class="cell" data-col="G" data-row="4"></td>
+        <td class="cell" data-col="H" data-row="4"></td>
+        <td class="cell" data-col="I" data-row="4"></td>
+      </tr>
+      <tr>
+        <td id="tbody-title 5">5</td>
+        <td class="cell" data-col="A" data-row="5"></td>
+        <td class="cell" data-col="B" data-row="5"></td>
+        <td class="cell" data-col="C" data-row="5"></td>
+        <td class="cell" data-col="D" data-row="5"></td>
+        <td class="cell" data-col="E" data-row="5"></td>
+        <td class="cell" data-col="F" data-row="5"></td>
+        <td class="cell" data-col="G" data-row="5"></td>
+        <td class="cell" data-col="H" data-row="5"></td>
+        <td class="cell" data-col="I" data-row="5"></td>
+      </tr>
+      <tr>
+        <td id="tbody-title 6">6</td>
+        <td class="cell" data-col="A" data-row="6"></td>
+        <td class="cell" data-col="B" data-row="6"></td>
+        <td class="cell" data-col="C" data-row="6"></td>
+        <td class="cell" data-col="D" data-row="6"></td>
+        <td class="cell" data-col="E" data-row="6"></td>
+        <td class="cell" data-col="F" data-row="6"></td>
+        <td class="cell" data-col="G" data-row="6"></td>
+        <td class="cell" data-col="H" data-row="6"></td>
+        <td class="cell" data-col="I" data-row="6"></td>
+      </tr>
+      <tr>
+        <td id="tbody-title 7">7</td>
+        <td class="cell" data-col="A" data-row="7"></td>
+        <td class="cell" data-col="B" data-row="7"></td>
+        <td class="cell" data-col="C" data-row="7"></td>
+        <td class="cell" data-col="D" data-row="7"></td>
+        <td class="cell" data-col="E" data-row="7"></td>
+        <td class="cell" data-col="F" data-row="7"></td>
+        <td class="cell" data-col="G" data-row="7"></td>
+        <td class="cell" data-col="H" data-row="7"></td>
+        <td class="cell" data-col="I" data-row="7"></td>
+      </tr>
+      <tr>
+        <td id="tbody-title 8">8</td>
+        <td class="cell" data-col="A" data-row="8"></td>
+        <td class="cell" data-col="B" data-row="8"></td>
+        <td class="cell" data-col="C" data-row="8"></td>
+        <td class="cell" data-col="D" data-row="8"></td>
+        <td class="cell" data-col="E" data-row="8"></td>
+        <td class="cell" data-col="F" data-row="8"></td>
+        <td class="cell" data-col="G" data-row="8"></td>
+        <td class="cell" data-col="H" data-row="8"></td>
+        <td class="cell" data-col="I" data-row="8"></td>
+      </tr>
+      <tr>
+        <td id="tbody-title 9">9</td>
+        <td class="cell" data-col="A" data-row="9"></td>
+        <td class="cell" data-col="B" data-row="9"></td>
+        <td class="cell" data-col="C" data-row="9"></td>
+        <td class="cell" data-col="D" data-row="9"></td>
+        <td class="cell" data-col="E" data-row="9"></td>
+        <td class="cell" data-col="F" data-row="9"></td>
+        <td class="cell" data-col="G" data-row="9"></td>
+        <td class="cell" data-col="H" data-row="9"></td>
+        <td class="cell" data-col="I" data-row="9"></td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
