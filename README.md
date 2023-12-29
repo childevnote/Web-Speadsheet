@@ -24,9 +24,6 @@
 </div>
 </details>
 
-<summary><h2>기대 결과</h2></summary>
-<img src="assets\1.gif">
-
 <summary><h2>최종 결과</h2></summary>
 <img src="assets\3.gif">
 <img src="assets\2.gif">
